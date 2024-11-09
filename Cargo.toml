@@ -2,6 +2,11 @@
 name = "lsp_doc"
 version = "0.1.0"
 edition = "2021"
+license-file = "LICENSE"
+description = "Embed markdown/text files into Rust documentation attributes for LSP hover/preview"
+repository = "https://github.com/MasterTemple/lsp_doc/"
+readme = "README.md"
+keywords = ["lsp", "doc"]
 
 [lib]
 proc-macro = true
