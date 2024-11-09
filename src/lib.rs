@@ -46,6 +46,7 @@ pub fn lsp_doc(
         .expect("The attribute macro should have a path to the file of type `Literal`.");
 
     let md = read_to_string(&path).expect(format!("Could not find {path:?}").as_str());
+    let md = format!("\n\n{}\n\n\n", md.trim());
 
     let mut new_items = vec![];
     let mut inserted = false;
