@@ -51,7 +51,6 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 | Value 3  | Value 4  |
 ```
 
-
 ### VSCode
 
 ![VSCode Screenshot](vscode.png)
@@ -65,4 +64,10 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 - Paths are relative to the crate root directory
 - Multiple embeds for the same item **are** supported
 - Images **are not** currently supported
-- File contents are cached by rust-analyzer, so if you frequently edit the embedded file, you might not see immediate updates
+- File contents are cached by rust-analyzer (see section below)
+
+## Updating a document
+
+If you frequently edit the embedded file, you will not see immediate updates.
+
+To force an update, you need to save the file or restart the language server (in VSCode: `Ctrl+Shift+P` -> `Rust analyzer: Restart server`)
