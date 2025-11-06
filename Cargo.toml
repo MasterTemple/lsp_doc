@@ -1,6 +1,6 @@
 [package]
 name = "lsp_doc"
-version = "0.2.0"
+version = "0.3.0"
 edition = "2024"
 license = "MIT"
 description = "Embed markdown/text files into Rust documentation attributes for LSP hover/preview"
@@ -16,5 +16,9 @@ syn = { version = "2.0", features = ["full"] }
 quote = "1.0"
 proc-macro2 = "1.0"
 
+[features]
+inline = []
+
 [dev-dependencies]
-lsp_doc = { path = "." }
+# lsp_doc = { path = ".", features = [] }
+lsp_doc = { path = ".", features = ["inline"] }
